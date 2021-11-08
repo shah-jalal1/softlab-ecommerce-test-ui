@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesComponent } from './admin/pages/pages.component';
 import { AdminAuthComponent } from './admin/admin-auth/admin-auth.component';
 import { Header2Component } from './core/menu/header2/header2.component';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 import {MatButtonModule} from '@angular/material/button';
 
@@ -15,7 +16,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppComponent,
     PagesComponent,
     AdminAuthComponent,
-    Header2Component
+    Header2Component,
+    // NgxSpinnerModule
   ],
   imports: [
     BrowserModule,

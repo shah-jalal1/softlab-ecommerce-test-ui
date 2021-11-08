@@ -19,7 +19,8 @@ import {MatIconModule} from "@angular/material/icon";
     PagesRoutingModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+
   ]
 })
 export class PagesModule { }
