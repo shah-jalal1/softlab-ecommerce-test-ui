@@ -52,10 +52,23 @@ const materials = [
   DragDropModule
 ];
 
+// @NgModule({
+//   declarations: [],
+//   imports: [
+//     CommonModule
+//   ]
+// })
+// export class MaterialModule { }
+
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    materials
+  ],
+  exports: [
+    materials
   ]
 })
-export class MaterialModule { }
+export class MaterialModule {
+}

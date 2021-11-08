@@ -17,6 +17,12 @@ const routes: Routes = [
     // canActivate: [UserAuthStateGuard],
     loadChildren: () => import('./user/login/login.module').then(m => m.LoginModule),
     data: {preload: true, delay: false}
+  },
+  {
+    path: 'registration',
+    // canActivate: [UserAuthStateGuard],
+    loadChildren: () => import('./user/registration/registration.module').then(m => m.RegistrationModule),
+    data: {preload: false, delay: false}
   }
   //   ]
   // }

@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LoginRoutingModule } from './login-routing.module';
-import {MaterialModule} from "../../../material/material.module";
-import {FormsModule} from "@angular/forms";
+import {MaterialModule} from '../../../material/material.module';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 
@@ -13,6 +13,7 @@ import {FormsModule} from "@angular/forms";
   imports: [
     MaterialModule,
     FormsModule,
+    ReactiveFormsModule,
     CommonModule,
     LoginRoutingModule
   ]

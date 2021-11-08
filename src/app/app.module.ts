@@ -8,6 +8,8 @@ import { PagesComponent } from './admin/pages/pages.component';
 import { AdminAuthComponent } from './admin/admin-auth/admin-auth.component';
 import { Header2Component } from './core/menu/header2/header2.component';
 
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +19,7 @@ import { Header2Component } from './core/menu/header2/header2.component';
   ],
   imports: [
     BrowserModule,
+    MatButtonModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
