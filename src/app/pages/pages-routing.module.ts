@@ -11,7 +11,13 @@ const routes: Routes = [
         path: '',
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
         data: {preload: true, delay: false}
-      }
+      },
+  {
+    path: 'login',
+    // canActivate: [UserAuthStateGuard],
+    loadChildren: () => import('./user/login/login.module').then(m => m.LoginModule),
+    data: {preload: true, delay: false}
+  }
   //   ]
   // }
 ];

@@ -3,15 +3,23 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
+import { LoginComponent } from './user/login/login.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatIconModule} from "@angular/material/icon";
 
 
 @NgModule({
   declarations: [
-    PagesComponent
+    PagesComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatIconModule
   ]
 })
 export class PagesModule { }
