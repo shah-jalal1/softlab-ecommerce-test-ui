@@ -10,6 +10,7 @@ import { Header2Component } from './core/menu/header2/header2.component';
 import { NgxSpinnerModule } from "ngx-spinner";
 
 import {MatButtonModule} from '@angular/material/button';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {MatButtonModule} from '@angular/material/button';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     MatButtonModule,
     AppRoutingModule,
     BrowserAnimationsModule
