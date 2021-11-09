@@ -12,6 +12,9 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import {MatButtonModule} from '@angular/material/button';
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {AuthUserInterceptor} from "./auth-interceptor/auth-user.interceptor";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MaterialModule} from "./material/material.module";
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import {AuthUserInterceptor} from "./auth-interceptor/auth-user.interceptor";
     HttpClientModule,
     MatButtonModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MaterialModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: AuthUserInterceptor, multi: true},
