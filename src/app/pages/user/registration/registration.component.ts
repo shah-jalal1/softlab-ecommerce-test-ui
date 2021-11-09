@@ -55,16 +55,16 @@ export class RegistrationComponent implements OnInit, OnDestroy {
 
   onSubmitForm() {
     console.log("button clicked");
-    if (this.dataForm.invalid) {
-      this.dataForm.markAllAsTouched();
-      // this.uiService.warn('Please complete all the required field');
-      return;
-    }
-
-    if (this.dataForm.value.password !== this.dataForm.value.confirmPassword) {
-      // this.uiService.warn('Password and confirm password not matched');
-      return;
-    }
+    // if (this.dataForm.invalid) {
+    //   this.dataForm.markAllAsTouched();
+    //   // this.uiService.warn('Please complete all the required field');
+    //   return;
+    // }
+    //
+    // if (this.dataForm.value.password !== this.dataForm.value.confirmPassword) {
+    //   // this.uiService.warn('Password and confirm password not matched');
+    //   return;
+    // }
 
     // if (!this.utilsService.checkValidPhone(this.dataForm.value.phoneNo) || this.dataForm.value.phoneNo.length !== 11) {
     //   this.dataForm.get('phoneNo').setErrors({invalid: true});
@@ -80,6 +80,8 @@ export class RegistrationComponent implements OnInit, OnDestroy {
     this.isLoading = true;
     this.spinner.show();
 
+    // console.log(this.dataForm);
+
     const registrationData = {
       fullName: this.dataForm.value.fullName,
       phoneNo: this.dataForm.value.phoneNo,
@@ -92,7 +94,8 @@ export class RegistrationComponent implements OnInit, OnDestroy {
       hasAccess: true,
       username: this.dataForm.value.phoneNo,
     };
-    // this.userService.userRegistration(registrationData);
+    console.log(registrationData);
+    this.userService.userRegistration(registrationData);
 
   }
 
