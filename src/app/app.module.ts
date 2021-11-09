@@ -10,7 +10,8 @@ import { Header2Component } from './core/menu/header2/header2.component';
 import { NgxSpinnerModule } from "ngx-spinner";
 
 import {MatButtonModule} from '@angular/material/button';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import {AuthUserInterceptor} from "./auth-interceptor/auth-user.interceptor";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import {HttpClientModule} from "@angular/common/http";
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: AuthUserInterceptor, multi: true},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
