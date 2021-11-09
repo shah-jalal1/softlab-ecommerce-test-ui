@@ -1,6 +1,7 @@
 import { PagesComponent } from './pages.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {UserAuthGuard} from "../user-auth.guard/user-auth.guard";
 
 const routes: Routes = [
   // {
@@ -23,6 +24,12 @@ const routes: Routes = [
     // canActivate: [UserAuthStateGuard],
     loadChildren: () => import('./user/registration/registration.module').then(m => m.RegistrationModule),
     data: {preload: false, delay: false}
+  },
+  {
+    path: 'account',
+    canActivate: [UserAuthGuard],
+    loadChildren: () => import('./user/account/account.module').then(m => m.AccountModule),
+    data: {preload: true, delay: false}
   }
   //   ]
   // }
