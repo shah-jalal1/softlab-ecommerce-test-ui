@@ -48,6 +48,7 @@ export class LoginComponent implements OnInit {
       return;
     }
     this.spinner.show();
+    console.log("button clicked");
     this.userService.userLogin(this.formData.value);
   }
 

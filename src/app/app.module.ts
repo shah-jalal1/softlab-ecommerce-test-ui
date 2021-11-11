@@ -15,6 +15,7 @@ import {AuthUserInterceptor} from "./auth-interceptor/auth-user.interceptor";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MaterialModule} from "./material/material.module";
+import {PagesModule} from "./admin/pages/pages.module";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {MaterialModule} from "./material/material.module";
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MaterialModule
+    MaterialModule,
+    PagesModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: AuthUserInterceptor, multi: true},
