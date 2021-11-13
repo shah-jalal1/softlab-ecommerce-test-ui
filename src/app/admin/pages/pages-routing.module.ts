@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {PagesComponent} from "./pages.component";
+import {CheckAuthAccessGuard} from "../../auth-guard/check-auth-access.guard";
 
 const routes: Routes = [
   {
@@ -8,6 +9,16 @@ const routes: Routes = [
     component: PagesComponent,
     children: [
       // {path: '', redirectTo: 'dashboard', pathMatch: 'full'}
+      {
+        path: 'products',
+        loadChildren: () => import('./products/products.module').then(m => m.ProductsModule),
+        canActivate: [CheckAuthAccessGuard]
+      },
+      {
+        path: 'add-product',
+        loadChildren: () => import('./products/add-product/add-product.module').then(m => m.AddProductModule),
+        canActivate: [CheckAuthAccessGuard]
+      }
     ]
   }
 ];
