@@ -8,6 +8,7 @@ import {FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {MaterialModule} from "../../../../material/material.module";
 import {NgxPaginationModule} from "ngx-pagination";
 import {NgxSpinnerModule} from "ngx-spinner";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {NgxSpinnerModule} from "ngx-spinner";
     ReactiveFormsModule,
     MaterialModule,
     NgxPaginationModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    MatProgressSpinnerModule
   ]
 })
 export class BrandsModule { }

@@ -18,14 +18,14 @@ export class BrandsComponent implements OnInit {
   }
 
   exportDataToFile() {
-    
+
   }
 
   onFileChange($event: Event) {
-    
+
   }
 
   onPageChanged($event: number) {
-    
+
   }
 }

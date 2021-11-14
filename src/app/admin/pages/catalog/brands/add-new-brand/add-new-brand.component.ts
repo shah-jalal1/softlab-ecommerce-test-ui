@@ -6,10 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-new-brand.component.scss']
 })
 export class AddNewBrandComponent implements OnInit {
+  isLoading: any;
+  autoSlug: any;
+  dataForm: any;
+  id: string;
+  router: any;
+  pickedImage: any;
+  brand: any;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  autoGenerateSlug() {
+    
+  }
+
+  onSubmit() {
+    
+  }
+
+  onHoldInputData() {
+    
+  }
 }
