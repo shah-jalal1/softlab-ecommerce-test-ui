@@ -109,19 +109,19 @@ export class ProductService {
     if (items === null) {
       compareList = [];
       compareList.push(productId);
-      this.uiService.success('Product added to compare list');
+      // this.uiService.success('Product added to compare list');
     } else {
       compareList = items;
       const fIndex = compareList.findIndex((o) => o._id === productId);
       if (fIndex === -1) {
         if (compareList.length !== 3) {
           compareList.push(productId);
-          this.uiService.success('Product added to compare list');
+          // this.uiService.success('Product added to compare list');
         } else {
-          this.uiService.wrong('Your compare list is full');
+          // this.uiService.wrong('Your compare list is full');
         }
       } else {
-        this.uiService.warn('This product already in compare list');
+        // this.uiService.warn('This product already in compare list');
       }
     }
     localStorage.setItem('compareList', JSON.stringify(compareList));

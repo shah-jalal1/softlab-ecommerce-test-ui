@@ -58,11 +58,11 @@ export class UploadImageComponent implements OnInit {
    */
   onUploadImages() {
     if (!this.selectedFolder) {
-      this.uiService.warn('No Folder name found!');
+      // this.uiService.warn('No Folder name found!');
       return;
     }
     if (!this.files || this.files.length <= 0) {
-      this.uiService.warn('No Image selected!');
+      // this.uiService.warn('No Image selected!');
       return;
     }
     this.fileUploadService.uploadMultiImageOriginal(this.files)
