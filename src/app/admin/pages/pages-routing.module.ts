@@ -23,7 +23,12 @@ const routes: Routes = [
         path: 'brands',
         loadChildren: () => import('./catalog/brands/brands.module').then(m => m.BrandsModule),
         canActivate: [CheckAuthAccessGuard]
-      }
+      },
+      {
+        path: 'categories',
+        loadChildren: () => import('./catalog/categories/categories.module').then(m => m.CategoriesModule),
+        canActivate: [CheckAuthAccessGuard]
+      },
     ]
   }
 ];

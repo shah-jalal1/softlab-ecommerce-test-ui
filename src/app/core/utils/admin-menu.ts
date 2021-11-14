@@ -768,26 +768,6 @@ export const menuItemsSuperAdmin: MenuAdmin[] = [
     target: null
   },
   {
-    id: 'b1',
-    title: 'Attributes',
-    icon: 'follow_the_signs',
-    hasSubMenu: false,
-    parentId: '3',
-    routerLink: 'attributes',
-    href: null,
-    target: null
-  },
-  {
-    id: 'b10',
-    title: 'Generics',
-    icon: 'follow_the_signs',
-    hasSubMenu: false,
-    parentId: '3',
-    routerLink: 'generics',
-    href: null,
-    target: null
-  },
-  {
     id: 'b2',
     title: 'Brands',
     icon: 'follow_the_signs',
@@ -804,16 +784,6 @@ export const menuItemsSuperAdmin: MenuAdmin[] = [
     hasSubMenu: false,
     parentId: '3',
     routerLink: 'categories',
-    href: null,
-    target: null
-  },
-  {
-    id: 'b3',
-    title: 'Sub Categories',
-    icon: 'follow_the_signs',
-    hasSubMenu: false,
-    parentId: '3',
-    routerLink: 'sub-categories',
     href: null,
     target: null
   },
