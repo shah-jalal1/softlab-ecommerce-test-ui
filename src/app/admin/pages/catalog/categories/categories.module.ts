@@ -4,7 +4,10 @@ import { CommonModule } from '@angular/common';
 import { CategoriesRoutingModule } from './categories-routing.module';
 import { CategoriesComponent } from './categories.component';
 import { AddNewCategoryComponent } from './add-new-category/add-new-category.component';
-
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MaterialModule} from "../../../../material/material.module";
+import {NgxSpinnerModule} from "ngx-spinner";
+import {NgxPaginationModule} from "ngx-pagination";
 
 @NgModule({
   declarations: [
@@ -13,7 +16,12 @@ import { AddNewCategoryComponent } from './add-new-category/add-new-category.com
   ],
   imports: [
     CommonModule,
-    CategoriesRoutingModule
+    CategoriesRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MaterialModule,
+    NgxSpinnerModule,
+    NgxPaginationModule
   ]
 })
 export class CategoriesModule { }
