@@ -20,14 +20,14 @@ export class AddNewBrandComponent implements OnInit {
   }
 
   autoGenerateSlug() {
-    
+
   }
 
   onSubmit() {
-    
+
   }
 
   onHoldInputData() {
-    
+
   }
 }

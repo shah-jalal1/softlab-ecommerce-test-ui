@@ -16,6 +16,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MaterialModule} from "./material/material.module";
 import {PagesModule} from "./admin/pages/pages.module";
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {PagesModule} from "./admin/pages/pages.module";
     ReactiveFormsModule,
     MatFormFieldModule,
     MaterialModule,
-    PagesModule
+    PagesModule,
+    SharedModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: AuthUserInterceptor, multi: true},
