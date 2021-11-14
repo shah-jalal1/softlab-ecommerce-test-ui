@@ -7,12 +7,13 @@ import {MaterialModule} from "../../material/material.module";
 import { SidenavListComponent } from './components/sidenav-list/sidenav-list.component';
 import { AddProductComponent } from './products/add-product/add-product.component';
 import { ProductsComponent } from './products/products.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ImageGalleryDialogComponent } from './gallery/image-gallery-dialog/image-gallery-dialog.component';
 import {NgxPaginationModule} from "ngx-pagination";
 import {NgxSpinnerModule} from "ngx-spinner";
 import { UploadImageComponent } from './gallery/upload-image/upload-image.component';
 import {NgxDropzoneModule} from "ngx-dropzone";
+import { NgxEditorModule } from 'ngx-editor';
 
 
 @NgModule({
@@ -33,9 +34,11 @@ import {NgxDropzoneModule} from "ngx-dropzone";
     PagesRoutingModule,
     MaterialModule,
     FormsModule,
+    NgxEditorModule,
+    ReactiveFormsModule,
     NgxPaginationModule,
     NgxSpinnerModule,
-    NgxDropzoneModule
+    NgxDropzoneModule,
   ]
 })
 export class PagesModule { }
