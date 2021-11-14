@@ -18,6 +18,11 @@ const routes: Routes = [
         path: 'add-product',
         loadChildren: () => import('./products/add-product/add-product.module').then(m => m.AddProductModule),
         canActivate: [CheckAuthAccessGuard]
+      },
+      {
+        path: 'brands',
+        loadChildren: () => import('./catalog/brands/brands.module').then(m => m.BrandsModule),
+        canActivate: [CheckAuthAccessGuard]
       }
     ]
   }
