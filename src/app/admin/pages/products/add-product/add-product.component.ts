@@ -155,6 +155,7 @@ export class AddProductComponent implements OnInit, OnDestroy {
     // GET ID FORM PARAM
     this.subRouteOne = this.activatedRoute.paramMap.subscribe((param) => {
       this.id = param.get('id');
+      console.log(this.id);
 
       if (this.id) {
         this.getSingleProductById();
@@ -162,7 +163,7 @@ export class AddProductComponent implements OnInit, OnDestroy {
         // GET ALL SELECTED DATA
         this.getAllCategory();
         this.getAllBrands();
-        this.getAllGenerics();
+        // this.getAllGenerics();
         this.getAllUnitTypes();
         // this.getAllAttributes();
         // this.getAllTags();
