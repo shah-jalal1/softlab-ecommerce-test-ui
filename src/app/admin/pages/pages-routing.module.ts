@@ -29,6 +29,16 @@ const routes: Routes = [
         loadChildren: () => import('./catalog/categories/categories.module').then(m => m.CategoriesModule),
         canActivate: [CheckAuthAccessGuard]
       },
+      {
+        path: 'image-folder',
+        loadChildren: () => import('./gallery/image-folder/image-folder.module').then(m => m.ImageFolderModule),
+        canActivate: [CheckAuthAccessGuard]
+      },
+      {
+        path: 'image-gallery',
+        loadChildren: () => import('./gallery/image-gallery/image-gallery.module').then(m => m.ImageGalleryModule),
+        canActivate: [CheckAuthAccessGuard]
+      },
     ]
   }
 ];

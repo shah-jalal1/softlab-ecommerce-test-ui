@@ -11,7 +11,7 @@ import {FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { ImageGalleryDialogComponent } from './gallery/image-gallery-dialog/image-gallery-dialog.component';
 import {NgxPaginationModule} from "ngx-pagination";
 import {NgxSpinnerModule} from "ngx-spinner";
-import { UploadImageComponent } from './gallery/upload-image/upload-image.component';
+import { UploadImageComponent } from './gallery/image-gallery-dialog/upload-image/upload-image.component';
 import {NgxDropzoneModule} from "ngx-dropzone";
 import { NgxEditorModule } from 'ngx-editor';
 

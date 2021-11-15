@@ -1,12 +1,12 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {FileUploadService} from '../../../../services/file-upload.service';
-import {GalleryService} from '../../../../services/gallery.service';
-import {UtilsService} from '../../../../services/utils.service';
-import {ReloadService} from '../../../../services/reload.service';
-import {ImageGallery} from '../../../../interfaces/image-gallery';
-import {ImageFolder} from '../../../../interfaces/image-folder';
-import {UiService} from '../../../../services/ui.service';
+import {FileUploadService} from '../../../../../services/file-upload.service';
+import {GalleryService} from '../../../../../services/gallery.service';
+import {UtilsService} from '../../../../../services/utils.service';
+import {ReloadService} from '../../../../../services/reload.service';
+import {ImageGallery} from '../../../../../interfaces/image-gallery';
+import {ImageFolder} from '../../../../../interfaces/image-folder';
+import {UiService} from '../../../../../services/ui.service';
 
 
 @Component({

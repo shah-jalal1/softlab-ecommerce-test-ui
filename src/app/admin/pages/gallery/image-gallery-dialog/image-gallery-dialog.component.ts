@@ -2,7 +2,7 @@ import {AfterViewInit, Component, ElementRef, Inject, OnInit, ViewChild} from '@
 import {ActivatedRoute, Router} from '@angular/router';
 import {FormBuilder, FormGroup, NgForm, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material/dialog';
-import {UploadImageComponent} from '../upload-image/upload-image.component';
+import {UploadImageComponent} from './upload-image/upload-image.component';
 import {debounceTime, distinctUntilChanged, pluck, switchMap} from 'rxjs/operators';
 import {EMPTY} from 'rxjs';
 import {ImageGallery} from '../../../../interfaces/image-gallery';
