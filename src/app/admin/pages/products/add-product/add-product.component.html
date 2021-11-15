@@ -172,35 +172,8 @@
             </div> <!-- END Category -->
 
             <div>
-              <mat-form-field appearance="outline">
-                <mat-label>Sub Category</mat-label>
-                <mat-select [disableOptionCentering]="true" #select2 placeholder="Select sub category" required
-                            (selectionChange)="onSelectSubCategory($event)"
-                            formControlName="subCategory">
-                  <mat-select-filter [placeholder]="'Filter Sub Category List'"
-                                     *ngIf="select2.focused"
-                                     [array]="subCategories"
-                                     [displayMember]="'subCategoryName'"
-                                     (filteredReturn)="filteredSubCatList = $event"></mat-select-filter>
-                  <mat-option *ngFor="let cat of filteredSubCatList" [value]="cat._id">
-                    {{cat.subCategoryName}}
-                  </mat-option>
-                </mat-select>
-                <mat-error>This field is required</mat-error>
-              </mat-form-field>
-            </div> <!-- END Sub Category -->
 
-            <!--            <div>-->
-            <!--              <mat-form-field appearance="outline">-->
-            <!--                <mat-label>Brand</mat-label>-->
-            <!--                <mat-select formControlName="brand">-->
-            <!--                  <mat-option *ngFor="let data of brands"-->
-            <!--                              [value]="data._id">{{data.brandName}}</mat-option>-->
-            <!--                </mat-select>-->
-            <!--              </mat-form-field>-->
-            <!--            </div>-->
 
-            <div>
               <mat-form-field appearance="outline">
                 <mat-label>Brand</mat-label>
                 <mat-select [disableOptionCentering]="true" #select3 placeholder="Select brand" required
@@ -218,23 +191,7 @@
               </mat-form-field>
             </div> <!-- END Brand -->
 
-            <div>
-              <mat-form-field appearance="outline">
-                <mat-label>Generic</mat-label>
-                <mat-select [disableOptionCentering]="true" #selectGeneric placeholder="Select generic" required
-                            formControlName="generic">
-                  <mat-select-filter [placeholder]="'Filter generic List'"
-                                     *ngIf="selectGeneric.focused"
-                                     [array]="generics"
-                                     [displayMember]="'name'"
-                                     (filteredReturn)="filteredGenericList = $event"></mat-select-filter>
-                  <mat-option *ngFor="let cat of filteredGenericList" [value]="cat._id">
-                    {{cat.name}}
-                  </mat-option>
-                </mat-select>
-                <mat-error>This field is required</mat-error>
-              </mat-form-field>
-            </div> <!-- END Brand -->
+
 
             <!---ATTRIBUTE-->
             <!--            <div>-->

@@ -257,7 +257,7 @@ export class AddProductComponent implements OnInit, OnDestroy {
 
   onSubmit() {
     if (this.dataForm.invalid) {
-      // this.uiService.warn('Please complete all the required field');
+      this.uiService.warn('Please complete all the required field');
       return;
     }
     this.spinner.show();
@@ -566,7 +566,7 @@ export class AddProductComponent implements OnInit, OnDestroy {
     this.productService.addSingleProduct(data)
       .subscribe(res => {
         this.spinner.hide();
-        // this.uiService.success(res.message);
+        this.uiService.success(res.message);
         this.storageService.removeSessionData('PRODUCT_INPUT');
         this.resetForm();
         // this.resetForm();
@@ -588,7 +588,7 @@ export class AddProductComponent implements OnInit, OnDestroy {
     this.productService.editProductById(data)
       .subscribe(res => {
         this.spinner.hide();
-        // this.uiService.success(res.message);
+        this.uiService.success(res.message);
         this.storageService.removeSessionData('PRODUCT_INPUT');
       }, error => {
         this.spinner.hide();
