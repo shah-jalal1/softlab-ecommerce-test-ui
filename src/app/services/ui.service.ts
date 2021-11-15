@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {MatSnackBar} from '@angular/material/snack-bar';
-// import {SnackbarNotificationComponent} from '../shared/components/ui/snackbar-notification/snackbar-notification.component';
+import {SnackbarNotificationComponent} from '../shared/components/ui/snackbar-notification/snackbar-notification.component';
 import {MatDialog} from '@angular/material/dialog';
 // import {CartViewDialogComponent} from '../shared/components/cart-view-dialog/cart-view-dialog.component';
 // import {Cart} from '../interfaces/cart';
@@ -25,39 +25,39 @@ export class UiService {
   /**
    * SNACKBAR
    */
-  // success(msg) {
-  //   // this.snackBar.openFromComponent(SnackbarNotificationComponent, {
-  //     data: msg,
-  //     duration: 2000,
-  //     horizontalPosition: 'center',
-  //     verticalPosition: 'bottom',
-  //     panelClass: ['notification', 'success-new']
-  //   });
-  // }
+  success(msg) {
+    this.snackBar.openFromComponent(SnackbarNotificationComponent, {
+      data: msg,
+      duration: 2000,
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      panelClass: ['notification', 'success-new']
+    });
+  }
 
-  // warn(msg) {
-  //   this.snackBar.openFromComponent(SnackbarNotificationComponent, {
-  //     data: msg,
-  //     duration: 2000,
-  //     horizontalPosition: 'center',
-  //     verticalPosition: 'bottom',
-  //     panelClass: ['notification', 'warn']
-  //   });
-  // }
+  warn(msg) {
+    this.snackBar.openFromComponent(SnackbarNotificationComponent, {
+      data: msg,
+      duration: 2000,
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      panelClass: ['notification', 'warn']
+    });
+  }
 
-  // wrong(msg) {
-  //   this.snackBar.openFromComponent(SnackbarNotificationComponent, {
-  //     data: msg,
-  //     duration: 2000,
-  //     horizontalPosition: 'center',
-  //     verticalPosition: 'bottom',
-  //     panelClass: ['notification', 'wrong']
-  //   });
-  // }
+  wrong(msg) {
+    this.snackBar.openFromComponent(SnackbarNotificationComponent, {
+      data: msg,
+      duration: 2000,
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      panelClass: ['notification', 'wrong']
+    });
+  }
 
-  // /**
-  //  * ADDITIONAL DIALOG
-  //  */
+  /**
+   * ADDITIONAL DIALOG
+   */
   // openCartViewDialog(data: Cart[]) {
   //   this.dialog.open(CartViewDialogComponent, {
   //     data,
@@ -67,10 +67,10 @@ export class UiService {
   //   });
   // }
 
-  // /**
-  //  * OPEN BOTTOM SHEET
-  //  */
-  // bottomSheetPrimary(data: {message: string; btnName?: string; routerLink?: string; timeOut?: number}) {
+  /**
+   * OPEN BOTTOM SHEET
+   */
+  bottomSheetPrimary(data: {message: string; btnName?: string; routerLink?: string; timeOut?: number}) {
   //   const sheetRef = this.bottomSheet.open(BottomSheetViewComponent, {
   //     panelClass: ['bottom-sheet-primary', 'primary'],
   //     data
@@ -87,7 +87,7 @@ export class UiService {
   //       this.router.navigate([comData.routerLink]);
   //     }
   //   });
-  // }
+  }
 
 
 }
