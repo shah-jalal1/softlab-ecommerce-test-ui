@@ -1,39 +1,29 @@
+@import "../../../../../theme/exports/table-one";
+@import "../../../../../theme/exports/search";
 
-
-
-.header-dialog {
-  margin: 10px 0;
-  width: 100%;
+.filter-area {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+  justify-content: flex-end;
+  margin: 12px 12px 24px 0;
 }
 
+/*----------------
+TOP ACTION
+------------------*/
+.top-action {
+  margin-top: 16px;
+  padding-right: 16px;
 
-form{
-  width: 450px;
-  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
 
-  .imag-view {
-    img {
-      cursor: pointer;
-      border: 2px solid #c9c9c9;
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-      border-radius: 85px;
-      transition: 0.3s all linear;
-
-      &:hover {
-        opacity: 0.7;
-      }
+  .select-area {
+    padding-left: 16px;
+    .mat-radio-button ~ .mat-radio-button {
+      margin-left: 16px;
     }
   }
 
-  mat-form-field{
-    width: 100%;
-  }
 
   button {
     ::ng-deep {
@@ -42,4 +32,22 @@ form{
       }
     }
   }
+}
+
+
+/*----------------
+HEADER TITLE
+------------------*/
+.header {
+  h2 {
+    text-align: center;
+    font-family: $font-en-primary;
+  }
+}
+
+
+.table-image {
+  width: 140px;
+  height: 100px;
+  object-fit: scale-down;
 }
