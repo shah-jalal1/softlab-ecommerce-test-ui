@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
+import {MaterialModule} from "../../material/material.module";
+import {FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 
 
@@ -12,7 +14,10 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MenuModule { }
