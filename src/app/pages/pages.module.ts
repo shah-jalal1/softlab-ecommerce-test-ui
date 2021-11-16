@@ -7,6 +7,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatIconModule} from "@angular/material/icon";
 import { AccountComponent } from './user/account/account.component';
+import {MenuModule} from "../core/menu/menu.module";
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { AccountComponent } from './user/account/account.component';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatIconModule,
+    MenuModule
 
   ]
 })

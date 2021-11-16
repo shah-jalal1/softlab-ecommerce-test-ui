@@ -5,14 +5,14 @@ import {UserAuthGuard} from "../auth-guard/user-auth.guard";
 import {UserAuthStateGuard} from "../auth-guard/user-auth-state.guard";
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   component: PagesComponent,
-  //   children: [
+   {
+     path: '',
+     component: PagesComponent,
+     children: [
       {
         path: '',
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
-        data: {preload: true, delay: false}
+       // data: {preload: true, delay: false}
       },
   {
     path: 'login',
@@ -32,8 +32,8 @@ const routes: Routes = [
     loadChildren: () => import('./user/account/account.module').then(m => m.AccountModule),
     data: {preload: true, delay: false}
   }
-  //   ]
-  // }
+    ]
+   }
 ];
 
 @NgModule({
